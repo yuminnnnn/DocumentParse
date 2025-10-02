@@ -1,0 +1,341 @@
+Metadata-Version: 2.4
+Name: DocumentParse
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: acres==0.5.0
+Requires-Dist: aiofiles==24.1.0
+Requires-Dist: aiohappyeyeballs==2.6.1
+Requires-Dist: aiohttp==3.12.15
+Requires-Dist: aiosignal==1.4.0
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: anyio==4.9.0
+Requires-Dist: apted==1.0.3
+Requires-Dist: attrs==25.3.0
+Requires-Dist: beautifulsoup4==4.13.4
+Requires-Dist: bidict==0.23.1
+Requires-Dist: bs4==0.0.2
+Requires-Dist: cachetools==6.1.0
+Requires-Dist: certifi==2025.7.14
+Requires-Dist: cffi==1.17.1
+Requires-Dist: chardet==5.2.0
+Requires-Dist: charset-normalizer==3.4.2
+Requires-Dist: ci-info==0.3.0
+Requires-Dist: click==8.2.1
+Requires-Dist: cmudict==1.1.1
+Requires-Dist: colorlog==6.9.0
+Requires-Dist: configobj==5.0.9
+Requires-Dist: configparser==7.2.0
+Requires-Dist: contourpy==1.3.3
+Requires-Dist: cryptography==45.0.5
+Requires-Dist: cssselect==1.3.0
+Requires-Dist: cssutils==2.11.1
+Requires-Dist: cycler==0.12.1
+Requires-Dist: cython==3.1.2
+Requires-Dist: dataclasses-json==0.6.7
+Requires-Dist: dill==0.4.0
+Requires-Dist: distance==0.1.3
+Requires-Dist: distro==1.9.0
+Requires-Dist: docling
+Requires-Dist: docling-core==2.43.0
+Requires-Dist: docling-ibm-models==3.8.1
+Requires-Dist: docling-parse==4.1.0
+Requires-Dist: easyocr==1.7.2
+Requires-Dist: einops==0.8.1
+Requires-Dist: emoji==1.2.0
+Requires-Dist: et-xmlfile==2.0.0
+Requires-Dist: etelemetry==0.3.1
+Requires-Dist: filelock==3.18.0
+Requires-Dist: filetype==1.2.0
+Requires-Dist: fitz==0.0.1.dev2
+Requires-Dist: fonttools==4.59.0
+Requires-Dist: frontend==0.0.3
+Requires-Dist: frozenlist==1.7.0
+Requires-Dist: fsspec==2025.7.0
+Requires-Dist: ftfy==6.3.1
+Requires-Dist: gputil==1.4.0
+Requires-Dist: greenlet==3.2.3
+Requires-Dist: h11==0.16.0
+Requires-Dist: hangul-jamo==1.0.1
+Requires-Dist: httpcore==1.0.9
+Requires-Dist: httplib2==0.22.0
+Requires-Dist: httpx==0.28.1
+Requires-Dist: httpx-sse==0.4.1
+Requires-Dist: huggingface-hub==0.33.4
+Requires-Dist: idna==3.10
+Requires-Dist: imageio==2.37.0
+Requires-Dist: imagesize==1.4.1
+Requires-Dist: importlib-resources==6.5.2
+Requires-Dist: iniconfig==2.1.0
+Requires-Dist: itsdangerous==2.2.0
+Requires-Dist: jamo==0.4.1
+Requires-Dist: jinja2==3.1.6
+Requires-Dist: jiter==0.10.0
+Requires-Dist: joblib==1.5.1
+Requires-Dist: jsonlines==3.1.0
+Requires-Dist: jsonpatch==1.33
+Requires-Dist: jsonpointer==3.0.0
+Requires-Dist: jsonref==1.1.0
+Requires-Dist: jsonschema==4.24.0
+Requires-Dist: jsonschema-specifications==2025.4.1
+Requires-Dist: kiwisolver==1.4.8
+Requires-Dist: kollocate==0.0.2
+Requires-Dist: koparadigm==0.10.0
+Requires-Dist: kss==6.0.4
+Requires-Dist: langchain==0.3.27
+Requires-Dist: langchain-community==0.3.27
+Requires-Dist: langchain-core==0.3.72
+Requires-Dist: langchain-openai==0.3.28
+Requires-Dist: langchain-text-splitters==0.3.9
+Requires-Dist: langsmith==0.4.10
+Requires-Dist: latex2mathml==3.78.0
+Requires-Dist: lazy-loader==0.4
+Requires-Dist: levenshtein==0.27.1
+Requires-Dist: looseversion==1.3.0
+Requires-Dist: lxml==5.1.0
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: marko==2.1.4
+Requires-Dist: markupsafe==3.0.2
+Requires-Dist: marshmallow==3.26.1
+Requires-Dist: matplotlib==3.10.3
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: mistune==2.0.4
+Requires-Dist: more-itertools==10.7.0
+Requires-Dist: mpire==2.10.2
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: multidict==6.6.3
+Requires-Dist: multiprocess==0.70.18
+Requires-Dist: mypy-extensions==1.1.0
+Requires-Dist: networkx==3.5
+Requires-Dist: nibabel==5.3.2
+Requires-Dist: ninja==1.11.1.4
+Requires-Dist: nipype==1.10.0
+Requires-Dist: numpy==2.2.6
+Requires-Dist: openai==1.96.1
+Requires-Dist: opencv-contrib-python==4.10.0.84
+Requires-Dist: opencv-python-headless==4.12.0.88
+Requires-Dist: openpyxl==3.1.5
+Requires-Dist: opt-einsum==3.3.0
+Requires-Dist: orjson==3.11.1
+Requires-Dist: pandas==2.3.1
+Requires-Dist: pathlib==1.0.1
+Requires-Dist: pdfminer-six==20250506
+Requires-Dist: pdfplumber==0.11.7
+Requires-Dist: pecab==1.0.8
+Requires-Dist: pillow==11.3.0
+Requires-Dist: pluggy==1.6.0
+Requires-Dist: premailer==3.10.0
+Requires-Dist: prettytable==3.16.0
+Requires-Dist: propcache==0.3.2
+Requires-Dist: protobuf==6.31.1
+Requires-Dist: prov==2.1.1
+Requires-Dist: puremagic==1.30
+Requires-Dist: py-cpuinfo==9.0.0
+Requires-Dist: pyarrow==21.0.0
+Requires-Dist: pyclipper==1.3.0.post6
+Requires-Dist: pycparser==2.22
+Requires-Dist: pydantic==2.11.7
+Requires-Dist: pydantic-core==2.33.2
+Requires-Dist: pydantic-settings==2.10.1
+Requires-Dist: pydot==4.0.1
+Requires-Dist: pylatexenc==2.10
+Requires-Dist: pyparsing==3.2.3
+Requires-Dist: pypdfium2==4.30.1
+Requires-Dist: pytest==8.4.1
+Requires-Dist: python-bidi==0.6.6
+Requires-Dist: python-docx==1.2.0
+Requires-Dist: python-dotenv==1.1.1
+Requires-Dist: python-levenshtein==0.27.1
+Requires-Dist: python-mecab-ko==1.3.7
+Requires-Dist: python-mecab-ko-dic==2.1.1.post2
+Requires-Dist: python-pptx==1.0.2
+Requires-Dist: pytz==2025.2
+Requires-Dist: pyxnat==1.6.3
+Requires-Dist: pyyaml==5.4.1
+Requires-Dist: rapidfuzz==3.13.0
+Requires-Dist: rdflib==7.1.4
+Requires-Dist: referencing==0.36.2
+Requires-Dist: regex==2024.11.6
+Requires-Dist: requests==2.32.4
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rich==14.0.0
+Requires-Dist: rpds-py==0.26.0
+Requires-Dist: rtree==1.4.0
+Requires-Dist: ruamel-yaml==0.18.14
+Requires-Dist: ruamel-yaml-clib==0.2.12
+Requires-Dist: safetensors==0.5.3
+Requires-Dist: scikit-image==0.25.2
+Requires-Dist: scikit-learn==1.7.1
+Requires-Dist: scipy==1.16.0
+Requires-Dist: semchunk==2.2.2
+Requires-Dist: sentence-transformers==5.0.0
+Requires-Dist: shapely==2.1.1
+Requires-Dist: shellingham==1.5.4
+Requires-Dist: simplejson==3.20.1
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: soupsieve==2.7
+Requires-Dist: sqlalchemy==2.0.42
+Requires-Dist: starlette==0.47.2
+Requires-Dist: sympy==1.14.0
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: tenacity==9.1.2
+Requires-Dist: threadpoolctl==3.6.0
+Requires-Dist: tifffile==2025.6.11
+Requires-Dist: tiktoken==0.9.0
+Requires-Dist: tokenizers==0.21.2
+Requires-Dist: torch==2.7.1
+Requires-Dist: torchvision==0.22.1
+Requires-Dist: tossi==0.3.1
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: traits==7.0.2
+Requires-Dist: transformers==4.53.2
+Requires-Dist: typer==0.16.0
+Requires-Dist: typing-inspect==0.9.0
+Requires-Dist: typing-inspection==0.4.1
+Requires-Dist: tzdata==2025.2
+Requires-Dist: ujson==5.10.0
+Requires-Dist: unidecode==1.4.0
+Requires-Dist: urllib3==2.5.0
+Requires-Dist: uv==0.8.4
+Requires-Dist: uvicorn==0.35.0
+Requires-Dist: whoosh==2.7.4
+Requires-Dist: xlrd==1.2.0
+Requires-Dist: xlsxwriter==3.2.5
+Requires-Dist: yarl==1.20.1
+Requires-Dist: zstandard==0.23.0
+
+# Docling 기반 문서 파싱 및 벤치마킹 시스템
+<br />
+<br />  
+
+## Tech Stack
+
+<img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/jupyter-F37626?style=flat&logo=jupyter&logoColor=white"/>
+
+<br />
+
+## Description
+이 프로젝트는 **docling** 라이브러리를 활용하여 문서를 효율적으로 파싱하고, 여러 Vision-Laguage Model(Gemma, Llama, Qwen 등) 기반 파서의 성능을 벤치마킹 및 평가하기 위한 프레임워크입니다.
+문서에서 텍스트, 레아이웃, 수학수식, 테이블 등을 정확하게 추출하고 분석하는 데 중점을 둡니다.
+이미지 기반 문서 처리를 위한 OCR 기능을 지원하여 고품질의 파싱 결과를 얻을 수 있도록 돕습니다.
+
+<br />
+
+## Features
+- Docling 라이브러리 통합: 강력한 문서 처리 및 변환 기능을 제공하는 docling 라이브러리를 핵심으로 사용합니다.
+- OCR 기능: 이미지 내 텍스트를 인식하여 추출하고 파싱 과정에 통합하여 처리합니다. 
+- 종합적인 벤치마킹: 추춛된 문서의 레이아웃, 정확도, 수학 수식 정화도, 테이블 구조 보존, 텍스트 추출 품질 등 다각적인 평가 지표를 통해 파서의 성능을 정량적으로 분석합니다.
+
+<br />
+  
+## Installation
+
+### Python 환경 설정
+Python 3.11 버전이 필요합니다.
+
+### 의존성 설치
+이 프로젝트는 uv를 사용하여 의존성을 관리합니다.
+uv가 설치되어 있지 않다면 먼저 설치합니다.
+```
+pip install uv
+```
+프로젝트 루트 디렉토리에서 다음 명령어를 실행하여 모든 의존성을 설치합니다.
+```
+uv sync
+```
+docling 라이브러리는 project.toml에 Git소스로 명시되어 있으므로 uv sync 명령어가 자동으로 처리합니다.
+
+<br />
+
+## Usage
+
+### 1. 문서 파싱 실행
+
+doc_parser/main.py 스크립트를 사용하여 문서를 파싱할 수 있습니다.
+```
+# 예시
+python doc_parser/main.py doc_parser/data/<문서이름>.pdf
+```
+
+### 1-1. Jupyter Notebook을 통합 실행
+
+runner/ 디렉토리에는 파싱 및 벤치마킹 과정을 시연하는 Jupyter Notebook 파일이 있습니다.
+
+- **runner/docling_parser_no_ocr.ipynb**: OCR 없이 문서를 파싱하는 예시
+- **runner/docling_parser_with_ocr.ipynb**: OCR을 포함하여 문서를 파싱하는 예시 
+
+Jupyter Notebook을 실행하여 이 파일들을 열고 지시에 따라 실행할 수 있습니다.
+
+### 2. 벤치마킹 실행
+
+md-bench/evaluate.py 스크립트를 사용하여 파싱된 결과와 골드 표준 데이터를 비교하여 벤치마킹을 수행합니다.
+```
+# 예시
+python md-bench/evaluate.py --gold data/gold/<파일이름>.md --pred data/pred/<파일이름>.md
+```
+
+<br />
+
+## Project Structure
+
+```
+├── data/
+│   ├── gold/                  
+│   │   └── ...
+│   ├── pred/                  
+│       ├── pred_gemma/
+│       │   └── ...
+│       └── pred_qwen/
+│           └── ...
+├── doc_parser/
+│   ├── data/                  
+│   │   └── ...
+│   ├── output/                
+│   │   ├── final_gemma/
+│   │   └── final_qwen/
+│   ├── src/                  
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   ├── docling_setup.py
+│   │   └── processing.py
+│   └── main.py                
+├── docling/                  
+│   └── docling/
+├── md-bench/
+│   ├── src/                   
+│   │   ├── layout_evaluation.py
+│   │   ├── math_evaluation.py
+│   │   ├── table_evaluation.py
+│   │   └── text_evaluation.py
+│   └── evaluate.py           
+├── runner/
+│   ├── docling_parser_no_ocr.ipynb  
+│   └── docling_parser_with_ocr.ipynb 
+├── pyproject.toml            
+├── uv.lock                    
+└── .gitignore                
+
+```
+
+<br />
+
+## Benchmarking and Evaluation
+
+**md-bench/scr** 디렉토리에는 다음과 같은 평가 스크립트가 포함되어 있습니다.
+
+- layout_evaluation.py: 문서 구조 보존력 평가
+- math_evaluation.py: 수학 수식의 추출 정확도 평가
+- table_evaluation.py: 테이블 구조 및 내용 추출 정확도 평가
+- text_evaluation.py: 문서 전체 텍스트 추출 정확도 평가
+
+
+이 스크립트들을 통해 각 파서의 강점과 약점을 파악하고 문서 파싱 성능을 종합적으로 개선할 수 있습니다.
+
+
+
+
+
+
+
+
