@@ -15,19 +15,17 @@ from docling.pipeline.vlm_pipeline import VlmPipeline
 from .config import OPENROUTER_API_KEY, OPENROUTER_BASE_URL, OPENROUTER_MODEL_NAME, VLM_SYSTEM_PROMPT
 
 def create_ocr_options() -> OcrOptions:
-    """OCR 옵션을 설정하고 반환합니다."""
     ocr_options = OcrOptions(
         ocr_engine="easyocr",
         lang=['ko', 'en'],
         ocr_options=EasyOcrOptions()
     )
-    print("✅ OCR 옵션 설정 완료 (EasyOCR)")
+    print(" OCR 옵션 설정 완료 (EasyOCR)")
     return ocr_options
 
 def create_vlm_options() -> Optional[ApiVlmOptions]:
-    """OpenRouter용 ApiVlmOptions를 생성하고 반환합니다."""
     if not OPENROUTER_API_KEY or OPENROUTER_API_KEY == "YOUR_OPENROUTER_API_KEY_HERE":
-        print("❌ OpenRouter API 키가 설정되지 않았습니다. 환경 변수 OPENROUTER_API_KEY를 설정하거나 config.py를 수정해주세요.")
+        print(" OpenRouter API 키가 설정되지 않았습니다. 환경 변수 OPENROUTER_API_KEY를 설정하거나 config.py를 수정해주세요.")
         return None
 
     headers = {
@@ -51,13 +49,13 @@ def create_vlm_options() -> Optional[ApiVlmOptions]:
         timeout=300,
         concurrency=1
     )
-    print(f"✅ VLM 옵션 설정 완료 (모델: {OPENROUTER_MODEL_NAME})")
+    print(f" VLM 옵션 설정 완료 (모델: {OPENROUTER_MODEL_NAME})")
     return vlm_options
 
 def setup_document_converter(ocr_opts: OcrOptions, vlm_opts: ApiVlmOptions) -> Optional[DocumentConverter]:
     """VLM 파이프라인이 설정된 DocumentConverter를 생성하고 반환합니다."""
     if vlm_opts is None:
-        print("❌ VLM 옵션이 설정되지 않아 Converter를 생성할 수 없습니다.")
+        print(" VLM 옵션이 설정되지 않아 Converter를 생성할 수 없습니다.")
         return None
 
     pipeline_options = VlmPipelineOptions(
@@ -78,5 +76,5 @@ def setup_document_converter(ocr_opts: OcrOptions, vlm_opts: ApiVlmOptions) -> O
             )
         }
     )
-    print("✅ VLM DocumentConverter 설정 완료")
+    print(" VLM DocumentConverter 설정 완료")
     return converter

@@ -1,10 +1,9 @@
 from pathlib import Path
 
-OPENROUTER_API_KEY = "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" 
+OPENROUTER_API_KEY = "" 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-OPENROUTER_MODEL_NAME = "google/gemma-3-27b-it:free" # 또는 "qwen/qwen2.5-vl-32b-instruct:free", "meta-llama/llama-3.2-11b-vision-instruct:free", "google/gemma-3-27b-it:free", "moonshotai/kimi-vl-a3b-thinking:free"
+OPENROUTER_MODEL_NAME = "google/gemma-3-27b-it:free" 
 
-# /LPMIS-사용자매뉴얼_V1.5/전략방법론/../data/wavus_data/LPMIS-사용자매뉴얼_V1.5-1.pdf/공유재산 위탁관리 편람/03. 3. 기술부문/04. 4. 성능 및 품질/2023년 입체주소 및 실내 이동경로 구축 용역_제안서_[gd]Ⅳ. 성능및품질_v1.1
 INPUT_DIR = Path("doc_parser/data")
 OUTPUT_DIR = Path("doc_parser/output")
 

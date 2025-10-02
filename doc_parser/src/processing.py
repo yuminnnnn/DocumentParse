@@ -26,16 +26,16 @@ def postprocess_markdown(content: str) -> str:
 def _load_pdf(path: Path):
     try:
         pdf = pdfium.PdfDocument(path)
-        print(f"📄 총 페이지 수: {len(pdf)}")
+        print(f"총 페이지 수: {len(pdf)}")
         return pdf
     except Exception as e:
-        print(f"❌ PDF 열기 실패: {e}")
+        print(f"PDF 열기 실패: {e}")
         return None
 
 
 def _process_batch(source_pdf, pages: list[int], batch_num: int, path: Path, converter: DocumentConverter) -> str:
     page_numbers = [i+1 for i in pages]
-    print(f"\n🔄 배치 처리: 페이지 {page_numbers[0]}-{page_numbers[-1]}...")
+    print(f"\n 배치 처리: 페이지 {page_numbers[0]}-{page_numbers[-1]}...")
 
     try:
         temp_pdf = pdfium.PdfDocument.new()
@@ -49,19 +49,14 @@ def _process_batch(source_pdf, pages: list[int], batch_num: int, path: Path, con
         result = converter.convert(stream)
 
         if result.status.name == "SUCCESS":
-            # if result.pages and result.pages[0].predictions.vlm_response and result.pages[0].predictions.vlm_response.text:
-            #     out_path = OUTPUT_DIR / f"{path.stem}_vlm_response_batch_{batch_num}_pages_{page_numbers[0]}-{page_numbers[-1]}.md"
-            #     out_path.write_text(result.pages[0].predictions.vlm_response.text, encoding="utf-8")
-            #     print(f"  📝 VLM 원본 응답 저장됨: {out_path}")
-
             return postprocess_markdown(result.document.export_to_markdown())
 
-        err = f"  👎 배치 실패: {result.status.name} - {result.status.value}"
+        err = f"  배치 실패: {result.status.name} - {result.status.value}"
         print(err)
         return f"\n\n---\n\n### {err}\n\n---\n\n"
 
     except Exception as e:
-        err = f"  ❌ 배치 처리 중 예외 발생: {e}"
+        err = f" 배치 처리 중 예외 발생: {e}"
         print(err)
         traceback.print_exc()
         return f"\n\n---\n\n### {err}\n\n---\n\n"
@@ -69,13 +64,13 @@ def _process_batch(source_pdf, pages: list[int], batch_num: int, path: Path, con
 
 def process_pdf_batch(input_pdf_path: Path, converter: DocumentConverter, batch_size: int = BATCH_SIZE) -> List[str]:
     if converter is None:
-        print("❌ Converter가 준비되지 않았습니다.")
+        print("Converter가 준비되지 않았습니다.")
         return []
     if not input_pdf_path.exists():
-        print(f"❌ 파일을 찾을 수 없습니다: {input_pdf_path}")
+        print(f"파일을 찾을 수 없습니다: {input_pdf_path}")
         return []
 
-    print(f"🚀 배치 파이프라인 시작: {input_pdf_path.name}")
+    print(f"배치 파이프라인 시작: {input_pdf_path.name}")
 
     source_pdf = _load_pdf(input_pdf_path)
     if not source_pdf:
