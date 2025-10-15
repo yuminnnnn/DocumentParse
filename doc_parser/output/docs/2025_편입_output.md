@@ -136,36 +136,6 @@ Contents Page
 
 표
 
-
-
----
-
-###   ❌ 배치 처리 중 예외 발생: Response ended prematurely
-
----
-
-
-
-
-
----
-
-###   ❌ 배치 처리 중 예외 발생: Can not append a child with children
-
----
-
-
-
-
-
----
-
-###   ❌ 배치 처리 중 예외 발생: Can not append a child with children
-
----
-
-
-
 ## 5. 2025학년도 편입학 전형유형별 모집 안내
 
 [정원 내] 일반편입 입학
@@ -219,15 +189,6 @@ Contents Page
 <!-- image -->
 
 모집단위 및 모집인원 표
-
-
-
----
-
-###   ❌ 배치 처리 중 예외 발생: Can not append a child with children
-
----
-
 
 
 ## 전형방법
@@ -838,15 +799,6 @@ $| 체육학과   |                               | 전적대학 성적 60% + �
 | 기회균등   | 모든 모집단위 | 전적 성적 100%         |        100 |
 
 ![이미지 설명](이미지)
-
-
-
----
-
-###   ❌ 배치 처리 중 예외 발생: Can not append a child with children
-
----
-
 
 
 ## ② 해당자 추가서류
